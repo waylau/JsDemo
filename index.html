@@ -1,42 +1,114 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+	<meta charset="utf-8">
+	<title>Way Lau's Labs | labs.waylau.com</title>
+	<meta name="description" content="">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+	<style>
+		@charset "utf-8";
+		/* CSS Document */
+		body {/*整个页面的属性设定*/
+			background-color: #CCCCCC; /*背景色*/
+			font-family: Geneva, sans-serif; /*可用字体*/
+			margin: 10px auto; /*页边空白*/
+			max-width: 800px;
+			border: solid; /*边缘立体*/
+			border-color: #FFFFFF; /*边缘颜色*/
+		}
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+		header {/*整个body页面的header适用*/
+			background-color: #F47D31;
+			color: #FFFFFF;
+			text-align: left;
+			margin: 10px;
+			padding: 10px;
+		}
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+		p {/*整个body页面的p适用*/
+			color: #F36;
+		}
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+		nav, article, aside {/*共同属性*/
+			margin: 10px;
+			padding: 10px;
+			display: block;
+		}
+
+		#logo_id {
+			float: left;
+			margin: 10px;
+			padding: 10px;
+		}
+		header#page_header nav {/*header#page_header nav的属性*/
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		header#page_header nav ul li {/*header#page_header nav ul li属性*/
+			padding: 0;
+			margin: 0 20px 0 0;
+			display: inline;
+		}
+
+		footer {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+
+	<header id="page_header">
+		<img id="logo_id" src="img/wl_white.png"  width="60" height="60"/>
+		<h2> Welcome to Way Lau's Labs</h2>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="http://labs.waylau.com/index.html">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="http://www.waylau.com/">
+						Blog
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+	<section id="posts">
+
+		<nav>
+			<ul>
+				<li>
+					HTML5全屏的例子
+					<a href="http://labs.waylau.com/JsDemo/FullScreenDemo.html">
+						http://labs.waylau.com/JsDemo/FullScreenDemo.html
+					</a>
+				</li>
+				<li>
+					HTML5右键菜单的例子
+					<a href="http://labs.waylau.com/JsDemo/RightClickFirfoxDemo.html">
+						http://labs.waylau.com/JsDemo/RightClickFirfoxDemo.html
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+		</article>
+	</section>
+
+	<footer>
+		<p>
+			更多实例请访问
+
+			<a href="http://www.waylau.com" target="_blank">
+				www.waylau.com
+			</a>
+		</p>
+	</footer>
+</body>
 </html>
