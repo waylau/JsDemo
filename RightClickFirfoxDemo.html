@@ -1,18 +1,25 @@
 <!DOCTYPE html>
- <html>
+<html>
 	<head>
 		<title>一个右键菜单的例子（仅Firefox支持menu）</title>
 		<meta charset="UTF-8"/>
+		<script>
+			function goToSite() {
+				window.open("http://www.waylau.com/", "new page");
+			}
+		</script>
 	</head>
 	<body>
- 		<button contextmenu="myRightMenu">右键按钮</button>
- 		<menu id="myRightMenu"  type="context">
+		<button contextmenu="myRightMenu">
+			右键按钮
+		</button>
+		<menu id="myRightMenu"  type="context">
 			<menuitem label="刷新"  ></menuitem>
 			<menuitem label="删除" ></menuitem>
-		    <menuitem label="更多实例，请访问www.waylau.com" >
-		    	<a href="http://www.waylau.com/"></a>
-		    </menuitem>
- 		</menu>
+			<menuitem label="更多实例，请访问www.waylau.com"
+			icon="http://sandbox.runjs.cn/uploads/rs/486/s3thmsc7/web_16_16.png"
+			onclick="goToSite()" ></menuitem>
+		</menu>
 	</body>
 </html>
- 
+
