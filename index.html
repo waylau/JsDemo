@@ -1,19 +1,114 @@
 <!DOCTYPE html>
- 
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
- 
-    </head>
- 
-        <h2>Hello world! This is Way Lau's Labs</h2>
 
- 		<p>
+<head>
+	<meta charset="utf-8">
+	<title>Way Lau's Labs | labs.waylau.com</title>
+	<meta name="description" content="">
+
+	<style>
+		@charset "utf-8";
+		/* CSS Document */
+		body {/*整个页面的属性设定*/
+			background-color: #CCCCCC; /*背景色*/
+			font-family: Geneva, sans-serif; /*可用字体*/
+			margin: 10px auto; /*页边空白*/
+			max-width: 800px;
+			border: solid; /*边缘立体*/
+			border-color: #FFFFFF; /*边缘颜色*/
+		}
+
+		header {/*整个body页面的header适用*/
+			background-color: #F47D31;
+			color: #FFFFFF;
+			text-align: left;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		p {/*整个body页面的p适用*/
+			color: #F36;
+		}
+
+		nav, article, aside {/*共同属性*/
+			margin: 10px;
+			padding: 10px;
+			display: block;
+		}
+
+		#logo_id {
+			float: left;
+			margin: 10px;
+			padding: 10px;
+		}
+		header#page_header nav {/*header#page_header nav的属性*/
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		header#page_header nav ul li {/*header#page_header nav ul li属性*/
+			padding: 0;
+			margin: 0 20px 0 0;
+			display: inline;
+		}
+
+		footer {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+
+	<header id="page_header">
+		<img id="logo_id" src="img/wl_white.png"  width="60" height="60"/>
+		<h2> Welcome to Way Lau's Labs</h2>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="http://labs.waylau.com/index.html">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="http://www.waylau.com/">
+						Blog
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+	<section id="posts">
+
+		<nav>
+			<ul>
+				<li>
+					HTML5全屏的例子
+					<a href="http://labs.waylau.com/JsDemo/FullScreenDemo.html">
+						http://labs.waylau.com/JsDemo/FullScreenDemo.html
+					</a>
+				</li>
+				<li>
+					HTML5右键菜单的例子
+					<a href="http://labs.waylau.com/JsDemo/RightClickFirfoxDemo.html">
+						http://labs.waylau.com/JsDemo/RightClickFirfoxDemo.html
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+		</article>
+	</section>
+
+	<footer>
+		<p>
 			更多实例请访问
+
 			<a href="http://www.waylau.com" target="_blank">
 				www.waylau.com
 			</a>
 		</p>
-    </body>
+	</footer>
+</body>
 </html>
